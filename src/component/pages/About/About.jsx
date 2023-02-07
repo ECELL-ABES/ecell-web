@@ -3,7 +3,7 @@ import './about.css'
 
 function About() {
   return (
-    <div className='container underline max-width'>
+    <div className='container underline max-width' id='about'>
         <div className='heading'>
             <h1 className='text-center'>About Us</h1>
             </div>

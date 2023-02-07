@@ -7,38 +7,13 @@ import { HiMail } from 'react-icons/hi';
 import { teamData } from './teamData';
 
 
-const TeamData=[
-  {
-    id: 1,
-    name: 'John Doe',
-    position: 'Web Developer',
-    image: ReactImg,
-  },
-  {
-    id: 2,
-    name: 'John Doe',
-    position: 'Web Developer',
-    image: ReactImg,
-  },
-  {
-    id: 3,
-    name: 'John Doe',
-    position: 'Web Developer',
-    image: ReactImg,
-  },
-  {
-    id: 4,
-    name: 'John Doe',
-    position: 'Web Developer',
-    image: ReactImg,
-  },
-]
+
 
 
 
 function Team() {
   return (
-    <div className='container underline max-width'>
+    <div className='container underline max-width' id='teams'>
         <div className='heading'>
           <h1>Working Committee</h1>
         </div>

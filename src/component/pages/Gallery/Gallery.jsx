@@ -24,7 +24,7 @@ function Gallery() {
    
   return (
    <>
-    <div className='container max-width'>
+    <div className='container max-width' id='gallery'>
         <div className='heading'>
           <h1>Gallery</h1>
         </div>

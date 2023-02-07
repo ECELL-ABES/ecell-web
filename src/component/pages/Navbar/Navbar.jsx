@@ -19,7 +19,7 @@ function Navbar() {
         exit={{ opacity: 0 }}
       >
       
-      <div className="nav-logo-div"><a href="/">
+      <div className="nav-logo-div"><a href="#">
         <img
           className="log_img"
           src={Logo}
@@ -69,11 +69,11 @@ function Navbar() {
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <a href="#"
+            <a href="#about"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Gallery
+              About Us
             </a>
           </motion.li>
           <motion.li
@@ -86,11 +86,11 @@ function Navbar() {
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <a href="#"
+            <a href="#event"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Career Tracks
+              Insights
             </a>
           </motion.li>
           
@@ -104,7 +104,7 @@ function Navbar() {
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <a href="#"
+            <a href="#teams"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -131,23 +131,13 @@ function Navbar() {
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <a href="#"
-              to="/hackathon"
+            <a href="#gallery"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              HackWithSalaah
+                Gallery
             </a>
           </motion.li>
-          {/* <li className="nav-item">
-            <a href="#"
-              to="/contact"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </a>
-          </li> */}
           <motion.li
             className="nav-item"
             initial={{ opacity: 0.6 }}
