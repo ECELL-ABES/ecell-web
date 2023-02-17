@@ -9,6 +9,11 @@ import MobileScroll from './MobileScroll/MobileScroll';
 import Team from './Team/Team';
 import WindowPeak from './WindowPeak';
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import ErrorPage from './Error/ErrorPage';
+import Contact from './contact/Contact';
+import Contactus from './contact/Contactus';
+import Massage from './mentorMassage/Massage';
+// import Headersocials from './Header/Headersocials';
 
 
 function HomePage() {
@@ -33,19 +38,20 @@ function HomePage() {
       :
     (<>
     <Header/>
+    
       <HeroSection/>
       <About/>
       <Event/>
-      {/* <div className="non-mobile">
-        <WindowPeak />
-      </div>   */}
-      {/* <MobileScroll/> */}
       <div className="non-mobile">
         <WindowPeak />
-      </div>      
+      </div> 
+      <Massage/>     
       <Team/>
       <Gallery/>
+      {/* <Contact/> */}
+      <Contactus/>
       <Footer/>
+      {/* <ErrorPage/> */}
     </>
     )}
     </>

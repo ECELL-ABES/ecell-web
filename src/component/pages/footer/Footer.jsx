@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './footer.css'
-import logo from "../../assets/entrepreneurship-tycoon-small-business-enterprise-concept-83519529.jpg"
+import logo1 from "../../assets/logos/ecell_abes.png"
+import logo2 from "../../assets/logos/INIF_LOGO.png"
 import { BsFillArrowUpRightSquareFill } from 'react-icons/bs';
 import { AiOutlineMail, AiOutlineArrowRight, AiOutlineLinkedin, AiOutlineInstagram} from 'react-icons/ai';
 import { CiTwitter } from 'react-icons/ci';
@@ -16,6 +17,8 @@ function Footer() {
         console.log(email);
       };
 
+      
+
   return (
     <section id='footer'>
         <div className='container container-footer'>
@@ -24,7 +27,7 @@ function Footer() {
                         <p>Stay Connected With</p>
                         <h2>Entrepreneurship cell,<br /> ABES Engineering College </h2>
                         <span>
-                        <form className="form-flex" onSubmit={handleSubmit}>
+                        <form className="form-flex"  onSubmit={handleSubmit}>
                             <input
                                 type="email"
                                 placeholder="Email"
@@ -39,33 +42,37 @@ function Footer() {
                         </form>
                         </span>
                     </div>
-                    <div className='col-logo'>
-                        <img src={logo} alt="" />
+                    <div className='col-logo inif'>
+                        <img src={logo2} alt="" />
                         </div>
                 </div>           
              <div className="row-bottom">
-                <div className="col-bottom">
-                    <h4>Fueling Innovative Business Ideas to Life.</h4>
+                <div className="col-bottom img1">
+                <div className='col-logo'>
+                        <img src={logo1} alt="" />
+                        </div>
+                    {/* <h4>Fueling Innovative Business Ideas to Life.</h4> */}
                     </div>
                 <div className="col-bottom">
                     <h4>Quick Links</h4>
                     <ul className="permalinks">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#event">Insights</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                 <div className="col-bottom">
                     <h4>Terms and Conditions</h4>
-                    <p>By using this website, you agree to our Terms and Conditions, Privacy Policy and Cookie Policy.</p>
+                    <p style={{color:'rgb(190, 190, 190)'}}>By using this website, you agree to our Terms and Conditions, Privacy Policy and Cookie Policy.</p>
                     </div>
                 <div className="col-bottom">
-                   <h4>Let's Chat</h4> 
-                       <span><a href="#"><AiOutlineMail/></a></span>  
-                       <span><a href="#"><CiTwitter/></a></span>  
-                       <span><a href="#"><AiOutlineLinkedin/></a></span>  
-                       <span><a href="#"><AiOutlineInstagram/></a></span>  
+                   <h4 style={{marginBottom:'.2rem'}}>Let's Chat</h4> 
+                       <span><a href="mailto:ecell@abes.ac.in"><AiOutlineMail/></a></span>  
+                       <span><a href="https://instagram.com/ecell_abesec?igshid=MDM4ZDc5MmU=" target="_blank"><AiOutlineInstagram/></a></span>  
+                       <span><a href="https://www.linkedin.com/in/ecell-abes-ec-4a4240172?trk=contact-info" target="_blank"><AiOutlineLinkedin/></a></span>  
                     </div>
                     </div>
                     </div>

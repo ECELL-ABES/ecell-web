@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/entrepreneurship-tycoon-small-business-enterprise-concept-83519529.jpg";
+import Logo1 from "../../assets/logos/ecell_abes.png";
+import Logo2 from "../../assets/logos/INIF_LOGO.png";
 import { motion } from "framer-motion";
-import {CgMenuGridR} from 'react-icons/cg'
+import {GiHamburgerMenu} from 'react-icons/gi'
 import {IoCloseSharp} from 'react-icons/io5';
 import './navbar.css';
 function Navbar() {
@@ -19,10 +20,18 @@ function Navbar() {
         exit={{ opacity: 0 }}
       >
       
-      <div className="nav-logo-div"><a href="#">
+      <div className="nav-logo-div1"><a href="#">
         <img
           className="log_img"
-          src={Logo}
+          src={Logo1}
+          style={{ maxWidth: "100%", maxHeight: "100%", display: "block", marginTop:"25px" }}
+          alt=""
+          onClick={closeMobileMenu}
+        /></a></div>
+      <div className="nav-logo-div2"><a href="#">
+        <img
+          className="log_img"
+          src={Logo2}
           style={{ maxWidth: "100%", maxHeight: "100%", display: "block", marginTop:"25px" }}
           alt=""
           onClick={closeMobileMenu}
@@ -148,18 +157,18 @@ function Navbar() {
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
-            <a href="#"
+            <a href="#contact"
               to="/updates"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Updates
+              Get in Touch
             </a>
           </motion.li>
           
         </ul>
         <div className="menu-icon" onClick={handleClick}>
-          { click ? <IoCloseSharp /> : <CgMenuGridR /> }
+          { click ? <IoCloseSharp /> : <GiHamburgerMenu /> }
         </div>
       </motion.nav>
     </div>

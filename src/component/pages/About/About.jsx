@@ -8,7 +8,9 @@ function About() {
             <h1 className='text-center'>About Us</h1>
             </div>
             <div className='about-content'>
-            <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta repellat iusto, totam blanditiis beatae corrupti, voluptate impedit veritatis, voluptatum dolore voluptatem placeat consequuntur perferendis architecto ad? Adipisci aut neque deserunt magnam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, quibusdam. Aperiam voluptatum et, qui maxime dolores accusamus, alias quasi reiciendis soluta laudantium debitis provident corrupti voluptate amet iure similique tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ut voluptatum perspiciatis nemo beatae cum fugit incidunt alias dolore deleniti pariatur, quia laboriosam accusantium atque debitis dolorem asperiores necessitatibus iusto magni minus facere blanditiis ad? Dolorem reiciendis, aliquid laudantium, repellendus a nemo, modi quaerat possimus ullam quod nostrum placeat dolorum!</p>
+            <p className='text-center text'>The Entrepreneurship cell of ABES Engineering College is a dedicated service of the college that caters to innovative young entrepreneurs and promotes the pursuit of innovation and creation. We believe passionately in the power of young, their developing and creative brains, and how such innovative abilities may transform the country's future. The motto of E-Cell's is "Dream, Believe, Achieve," and we passionately believe that you can achieve your dreams if you believe in them and have the power to act on them. The ABES EC E-Cell is the branch of the organization that assists you in realizing your dreams by instilling in you the values of entrepreneurship and innovation, as well as assisting you in making your dream into a reality.
+            </p>
+
         </div>
     </div>
   )
